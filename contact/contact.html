@@ -8,6 +8,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://barbie76g.github.io/group-j-coursework-web/css/general.css">
     <link rel="stylesheet" href="https://barbie76g.github.io/group-j-coursework-web/css/contact.css">
+   
 </head>
 <body>
     
@@ -42,6 +43,59 @@
             </div>
         </div>
     </nav>
+
+    <section class="contact-section">
+    <div class="contact-container">
+
+
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>We would love to hear from you! Use the form or details below to contact us.</p>
+
+        <div class="info-box">
+          <h3><img src="https://barbie76g.github.io/group-j-coursework-web/images/contact/003.png" alt="" width="20px"> Address</h3>
+          <p>Golden Sand Hotel, Palm Beach Road</p>
+        </div>
+
+        <div class="info-box">
+          <h3><img src="https://barbie76g.github.io/group-j-coursework-web/images/contact/002.jpeg" alt="" width="20px"> Phone</h3>
+          <p>+256 772 248 228</p>
+        </div>
+
+        <div class="info-box">
+          <h3><img src="https://barbie76g.github.io/group-j-coursework-web/images/contact/001.jpeg" alt="" width="20px"> Email</h3>
+          <p>goldensandhotel@gmail.com</p>
+        </div>
+      </div>
+
+
+      <form id="contact-form" class="contact-form">
+        <h2>Send a Message</h2>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..."></textarea>
+
+        <p id="form-msg" class="form-msg"></p>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Golden Sand Hotel. All Rights Reserved.</p>
+  </footer>
+
+
+  <script src="contactTwo.js" defer></script>
+
+
 
 </body>
 </html>
