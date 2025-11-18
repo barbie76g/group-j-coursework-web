@@ -5,11 +5,14 @@ body {
     background-size: cover;
 }
 
-.navbar{
-    background-color: rgb(45, 77, 114);
+h1 {
+    text-align: center;
 }
 
 .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     background-color: rgb(45, 77, 114);
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +21,9 @@ body {
 
 .navbar a {
     color: white;
+    text-decoration: none;
     padding: 15px 20px;
+    display: block;
     text-align: center;
 }
 
@@ -26,7 +31,23 @@ body {
     background-color: rgb(19, 18, 80);
 }
 
-.container-fluid p {
+.cont-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    justify-content: center;
+}
+
+.cont-fluid img {
+    border-radius: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+.cont-fluid p {
+    text-align: center;
+    padding: 30px;
     background-color: rgb(45, 77, 114);
     border-radius: 20px;
     color: white;
@@ -34,34 +55,40 @@ body {
     margin: 0;
 }
 
-.container {
+.cont {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(45, 77, 114);
+    padding: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
-.container div {
+.cont div {
     margin: 15px;
     min-width: 150px;
 }
 
-.container p {
+.cont p {
     color: white;
 }
 
 @media (max-width: 768px) {
 
-    .container-fluid {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .cont-fluid {
         padding: 20px;
     }
 
-    .container-fluid p {
+    .cont-fluid p {
         max-width: 100%;
     }
 
-    .container {
+    .cont {
         flex-direction: column;
         text-align: center;
     }
@@ -73,7 +100,7 @@ body {
         padding: 12px;
     }
 
-    .container-fluid p {
+    .cont-fluid p {
         padding: 20px;
         font-size: 0.95rem;
     }
