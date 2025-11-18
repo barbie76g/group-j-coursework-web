@@ -1,46 +1,50 @@
+
 header {
-    background-color:rgb(200, 238, 249)
-    color: white;
+    
+    background-position: center;
+    height: 200px;
     text-align: center;
-    padding: 10px 0;
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    font-weight: bold;}
+    text-decoration-color: rgb(231, 229, 223);
+    color: rgb(235, 233, 228);
+  }
+
 
 body {
-    margin: 20;  
+    margin: 20px;
     font-family: 'Verdana', sans-serif;
-   background-color:rgb(51, 125, 145)
-    color: blueviolet;}
+    background-image: url('img3.avif');
+    text-decoration-color: goldenrod;
+    color:rgb(186, 147, 222);
+    padding-bottom: 10px; 
+}
 
-    
-    nav ul {
+nav ul {
   list-style: none;
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  background-color: rgb(45, 77, 114);
+  padding: 10px;
+  text-decoration-color:black ;
 }
 nav a {
   text-decoration: none;
-  color: ;
+  color: white; 
   font-weight: bold;
 }
 
 nav a:hover {
-  color:rgb(63, 91, 118);
+  color: goldenrod;
 }
 section {
     margin: 20px;
     padding: 10px;
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    
+   
 }
 
 section h2 {
-    color: blue;
+    color:blue;
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -49,10 +53,10 @@ section p {
     line-height: 1.5;
 }
 footer {
-    background-color: #4CAF50;
+    background-color: #4a3791;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 0.5px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
