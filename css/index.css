@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
 
     text-decoration-color: goldenrod;
-    color:rgb(229, 222, 234);
+    color: goldenrod;
     padding-bottom: 10px; 
 }
 
@@ -37,7 +37,7 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
+a:hover {
   color: goldenrod;
 }
 section {
