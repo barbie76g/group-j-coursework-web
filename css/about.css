@@ -42,7 +42,7 @@ h1 {
 }
 
 .container-fluid img {
-    border-radius: 50px;
+    border-radius: 500px;
     max-width: 100%;           /* responsive image */
     height: auto;
 }
