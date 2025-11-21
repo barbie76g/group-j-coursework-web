@@ -61,7 +61,7 @@
         <div class="right side">
             <div class="about">
                 <br>
-                <p> WELCOME!! <br> <br>
+                <p id="welcomeText"> WELCOME!! <br> <br>
                     It is our pride and joy to make your stay as close
                     to paradise as it can be.
 
@@ -76,7 +76,7 @@
         <div class="right side">
             <div class="about">
                 <br>
-                <p> HISTORY <br> <br>
+                <p id="historyText"> HISTORY <br> <br>
                     Since 1761 we have made it our mission to bring class
                     and comfort to all our residents with added luxury as we adjust to the times.
 
@@ -94,7 +94,7 @@
         <div class="right side">
             <div class="about">
                 <br>
-                <p> STAFF <br> <br>
+                <p id="staffText"> STAFF <br> <br>
                     Our staff is welcoming and always ready to serve and make
                     you feel at home.
 
@@ -144,6 +144,51 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
+        <script>
+    
+    const welcomeMessages = [
+        "It is our pride and joy to make your stay as close to paradise as it can be.",
+        "Welcome to Golden Sand Hotel!",
+        "Your comfort is our No.1 priority for the duration of your stay.",
+        "Relax and enjoy your stay. WE LOVE TO HAVE YOU HERE.",
+        "A luxurious experience awaits you. The best this country has to offer."
+    ];
+
+    const historyMessages = [
+        "Since 1761, we've served guests with elegance.",
+        "Our hotel has a rich history of luxury and excellence.",
+        "Tradition meets modern comfort here. Taking you back but in style.",
+        "Creating memories since 1761.",
+        "Experience timeless hospitality."
+    ];
+
+    const staffMessages = [
+        "Our staff is welcoming and always ready to serve.",
+        "We make you feel at home , at work or wherever you would like to feel.",
+        "Friendly faces, attentive service, incredibly responsive and cooperative staff.",
+        "Dedicated to your comfort and joy within our walls.",
+        "Hospitality is our specialty.We are ranked no.1 in the Tri-state Area."
+    ];
+
+
+    function rotateText(id, messages, interval) {
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % messages.length;
+            document.getElementById(id).innerHTML = messages[index];
+        }, interval);
+    }
+
+
+    rotateText("welcomeText", welcomeMessages, 3000);
+    rotateText("historyText", historyMessages, 4000); 
+    rotateText("staffText", staffMessages, 5000);
+</script>
+
+        
+
+    
 </body>
 
 </html>
