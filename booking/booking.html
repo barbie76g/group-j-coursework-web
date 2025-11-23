@@ -4,93 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure HTML/CSS/JS Booking Form</title>
+    <link rel="stylesheet" href="tra.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://barbie76g.github.io/group-j-coursework-web/css/general.css">
     <link rel="stylesheet" href="https://barbie76g.github.io/group-j-coursework-web/css/booking.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="https://barbie76g.github.io/group-j-coursework-web/">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://barbie76g.github.io/group-j-coursework-web/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://barbie76g.github.io/group-j-coursework-web/services/services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://barbie76g.github.io/group-j-coursework-web/about/about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://barbie76g.github.io/group-j-coursework-web/rooms/rooms">Rooms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://barbie76g.github.io/group-j-coursework-web/booking/booking.html">Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://barbie76g.github.io/group-j-coursework-web/contact/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
+     
+    
+        
+    
+        
+        
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">Golden Sand Hotel</a>
+        <div class="navbar-links">
+            <a href="https://barbie76g.github.io/group-j-coursework-web/">Home</a>
+            <a href="https://barbie76g.github.io/group-j-coursework-web/services/services.html">Services</a>
+            <a href="https://barbie76g.github.io/group-j-coursework-web/about/about.html">About</a>
+            <a href="https://barbie76g.github.io/group-j-coursework-web/rooms/rooms.html">Rooms</a>
+            <a href="https://barbie76g.github.io/group-j-coursework-web/booking/booking.html">Booking</a>
+            <a href="https://barbie76g.github.io/group-j-coursework-web/contact/contact.html">Contact</a>
         </div>
     </nav>
-
-    <h1>WELCOME TO GOLDEN SAND HOTEL </h1><section class="form">
- <form action="" id="BOOKING">
-    <label>First name</label> <input type="name" id="first-name"><br><br>
-    <label>Last name</label> <input type="name" id="last-name"><br><br>
-    <label>Email</label><input type="email" id="email"><br><br>
-     <label>Date of check in</label>  <input type="date" id="checkin"><br><br>
-    <label>Date of check out</label><input type="date" id="checkout"><br><br>
-   <label>ROOM TYPE</label> <select class="room-type">
-        <option value="single">SINGLE</option>
-        <option value=" double">DOUBLE</option>
-        <option value="suite">SUITE</option>
-
-
-    </select>
-    <br><br>
     
-    <p id="Payment">PAYMENT</p>
-    <input type="radio" name="payment" value="yes"><label>CASH</label>
-    <input type="radio" name="payment" value="yes"><label>CHEQUE</label>
-    <input type="radio" name="payment" value="yes"><label>CREDIT CARD</label>
-    <input type="radio" name="payment" value="yes"><label>DEBIT CARD</label><br><br>    
-
-    <button type="submit" class="button">BOOK NOW</button>
     
-  </form>
-    </section>
-    <section class="rooms">
-        <h2>FEATURED ROOMS</h2>
-        <div class="room-grid">
-            <div class="room">
-                <img src="https://barbie76g.github.io/group-j-coursework-web/images/booking/room1.jpeg"alt="Room1">
-                <h3>Single Room</h3>
-                <p>$100/night</p>
-                <button>BOOK NOW</button>
-            </div>
-            <div class="room">
-                <img src="https://barbie76g.github.io/group-j-coursework-web/images/booking/room2.jpeg" alt="Room2">
-                <h3>Double Room</h3>
-                <p>$150/night</p>
-                <button>BOOK NOW</button>
-            </div>
-               <div class="room">
-                <img src="https://barbie76g.github.io/group-j-coursework-web/images/booking/room3.jpeg" alt="Room3">
-                <h3>Executive suite Room</h3>
-                <p>$250/night</p>
-                <button>BOOK NOW</button>
-            </div>
+    <div class="main-content">
+        <div class="form-container">
+            <h1>Book Your Stay</h1>
+            <p class="subtitle">Booking page of our Hotel Golden Sand Hotel.</p>
+
+            <form id="bookingForm">
+
+            
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Guest name" required class="input">
+                    </div>
+                    <div class="input-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="username@example.com" required class="input">
+                    </div>
+                </div>
+
+                
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="in">Check In</label>
+                        <input type="date" name="check_in" id="in" required class="input">
+                    </div>
+                    <div class="input-field">
+                        <label for="out">Check Out</label>
+                        <input type="date" name="check_out" id="out" required class="input">
+                    </div>
+                </div>
+
+                
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="guests">Guests</label>
+                        <select name="guests" id="guests" required class="input">
+                            <option value="1">1 Adult</option>
+                            <option value="2">2 Adults</option>
+                            <option value="3">2 Adults + 2 kids</option>
+                            <option value="4">4 Adults + 3 kids</option>
+                            <option value="5">4 Adults + 4 kids</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="rooms">Rooms</label>
+                        <select name="rooms" id="rooms" required class="input">
+                            <option value="1">1 Room</option>
+                            <option value="2">2 Rooms</option>
+                            <option value="3">3 Rooms</option>
+                            <option value="4">2 Rooms + 2 kids rooms</option>
+                            <option value="5">4 Rooms + 4 kids rooms</option>
+                        </select>
+                    </div>
+                </div>
+
+    
+                <div class="payment-options">
+                    <p style="font-weight: bold; color: #555;">Payment Method</p>
+                    <div class="radio-group">
+                        <div class="form-check">
+                            <input type="radio" name="payment_method" value="cash" id="cash">
+                            <label for="cash">CASH</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="payment_method" value="cheque" id="cheque">
+                            <label for="cheque">CHEQUE</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="payment_method" value="credit_card" id="credit_card" >
+                            <label for="credit_card">CREDIT CARD</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="payment_method" value="debit_card" id="debit_card">
+                            <label for="debit_card">DEBIT CARD</label>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="validationMessage" class="validation-message" aria-live="polite">
+        
+                </div>
+                
+                
+                <button type="submit" class="button">
+                    Check Available Rooms
+                </button>
+            </form>
         </div>
-    </section>
+    </div>
+
+
+
+
     <footer>
         <p>
            &copy; KATO CALVIN / 2025-B221-10207 / Bsc Education 
