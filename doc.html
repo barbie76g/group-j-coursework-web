@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+#include <thread>   // for sleep
+#include <chrono>   // for delay
+using namespace std;
+
+int main() {
+    // Step 1: Greeting
+    cout << "Encrypted Message Decoder\n";
+    cout << "Name: YIGA SAMUEL \n";
+    cout << "Student ID:s2500500971\n\n";
+
+    // Step 2: Encoded message (numbers)
+    int codes[] = {72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 33, 42, 42, 42};
+    int size = sizeof(codes) / sizeof(codes[0]);
+
+    // Step 3: Decode manually (ASCII)
+    string message = "";
+    for (int i = 0; i < size; i++) {
+        char ch = (char)codes[i]; // convert number to character
+        message += ch;
+    }
+
+    // Step 4: Validation
+    if (message.length() != 14) {
+        cout << "Error: Message is not 15 characters long!\n";
+        return 0;
+    }
+
+    // Step 5: Count letters, numbers, symbols
+    int letters_cout = 0, numbers_cout = 0, symbols_cout = 0;
+    for (char c : message) {
+        if (isalpha(c)) letters++;
+        else if (isnumber(c)) numbers++;
+        else symbols++;
+    }
+
+    // Step 6: Display in a box
+    int width = message.length() + 4; // box size
+    for (int i = 0; i < width; i++) cout << "*";
+    cout << endl;
+
+    cout << "* ";
+    // Reveal characters with delay
+    for (char c : message) {
+        cout << c << flush; // flush makes it appear instantly
+        this_thread::sleep_for(chrono::milliseconds(500)); // 0.5 sec delay
+    }
+    cout << " *\n";
+
+    for (int i = 0; i < width; i++) cout << "*";
+    cout << endl;
+
+    // Step 7: Show counts
+    cout << "\nMessage Stats:\n";
+    cout << "Letters: " << letters << endl;
+    cout << "Numbers: " << numbers << endl;
+    cout << "Symbols: " << symbols << endl;
+
+    return 0;
+}
